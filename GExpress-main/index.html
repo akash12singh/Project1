@@ -1,0 +1,347 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.16.0/tingle.css"
+      integrity="sha512-k6op6U+6fzScsVhxntLBg+Ob/Gv64fjNfjuAcNtbngRoi1LKf+aicRaEs3zeTrRuoIkOjGwLf9FR5BR7B3NItw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tingle/0.16.0/tingle.min.js"
+      integrity="sha512-2B9/byNV1KKRm5nQ2RLViPFD6U4dUjDGwuW1GU+ImJh8YinPU9Zlq1GzdTMO+G2ROrB5o1qasJBy1ttYz0wCug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.14.0/firebase-app-compat.min.js"
+      integrity="sha512-460ujcJ8VGOlOdtJglsQkZf64FMW1Z/OmmVbCb3UQ9570cu+c61T/H6FWji7BPNl2J8k31TR8GC+NiIpc42nKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.14.0/firebase-auth-compat.min.js"
+      integrity="sha512-PBKOB8oKtWlVLZ0y89xMB9107EHENQVoSLi0IvHXlRv7bKM2asLmQGTX/qJ8j+/oC8Yzk3EHnNlhULp4oFCoGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="/auth.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>G Express</title>
+  </head>
+
+  <body>
+    <nav id="nav">
+      <div class="navTop">
+        <div class="navItem">
+          <img src="./img/logo.png" height="70px" alt="" />
+        </div>
+        <div class="navItem">
+          <div class="search">
+            <input type="text" placeholder="" class="searchInput" />
+            <img
+              src="./A_black_image.jpg.webp"
+              width="20"
+              height="20"
+              alt="."
+              class="searchIcon"
+            />
+          </div>
+        </div>
+        <div class="navItem" id="auth-item">
+          <span class="limitedOffer" onclick="authHandler()"></>
+            Login
+          </span>
+        </div>
+      </div>
+      <div class="navBottom">
+        <h3 class="menuItem menuItem-m">MOUSE</h3>
+        <h3 class="menuItem menuItem-k">KEYBOARD</h3>
+        <h3 class="menuItem menuItem-h">HEADPHONE</h3>
+        <h3 class="menuItem menuItem-c">CHAIR</h3>
+        <h3 class="menuItem menuItem-c1">CONTROLLER</h3>
+      </div>
+    </nav>
+    <div class="slider">
+      <div class="sliderWrapper">
+        <div class="sliderItem">
+          <img
+            src="./img/mouse00.png"
+            height="500px"
+            alt=""
+            class="sliderImg"
+          />
+          <div class="sliderBg"></div>
+          <h1 class="sliderTitle">
+            ALL<br />
+            NEW<br />
+            GAMING MOUSE
+          </h1>
+          <h2 class="sliderPrice">₹14500</h2>
+          <a href="#product">
+            <button class="buyButton">BUY NOW!</button>
+          </a>
+        </div>
+        <div class="sliderItem">
+          <img
+            src="./img/keyboard.png"
+            alt=""
+            height="450px"
+            class="sliderImg"
+          />
+          <div class="sliderBg"></div>
+          <h1 class="sliderTitle">
+            NEW<br />
+            KEYBOARD<br />
+            DESIGN
+          </h1>
+          <h2 class="sliderPrice">₹5990</h2>
+          <a href="#product">
+            <button class="buyButton">BUY NOW!</button>
+          </a>
+        </div>
+        <div class="sliderItem">
+          <img
+            src="./img/headphone1.png"
+            height="350px"
+            alt=""
+            class="sliderImg"
+          />
+          <div class="sliderBg"></div>
+          <h1 class="sliderTitle">
+            BOAT'S<br />
+            NEW<br />
+            HEADPHONES
+          </h1>
+          <h2 class="sliderPrice">₹2000</h2>
+          <a href="#product">
+            <button class="buyButton">BUY NOW!</button>
+          </a>
+        </div>
+        <div class="sliderItem">
+          <img src="./img/chair1.png" height="600px" alt="" class="sliderImg" />
+          <div class="sliderBg"></div>
+          <h1 class="sliderTitle">
+            NEW<br />
+            ULTIMATE<br />
+            GAMING CHAIR
+          </h1>
+          <h2 class="sliderPrice">₹35533</h2>
+          <a href="#product">
+            <button class="buyButton">BUY NOW!</button>
+          </a>
+        </div>
+        <div class="sliderItem">
+          <img
+            src="./img/controller0.png"
+            alt=""
+            height="450px"
+            class="sliderImg"
+          />
+          <div class="sliderBg"></div>
+          <h1 class="sliderTitle">
+            XBOX<br />
+            NEW<br />
+            COLORS
+          </h1>
+          <h2 class="sliderPrice">₹6590</h2>
+          <a href="#product">
+            <button class="buyButton">BUY NOW!</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <img src="./img/shipping.png" alt="" class="featureIcon" />
+        <span class="featureTitle">FREE SHIPPING</span>
+        <span class="featureDesc">Free worldwide shipping on all orders.</span>
+      </div>
+      <div class="feature">
+        <img class="featureIcon" src="./img/return.png" alt="" />
+        <span class="featureTitle">30 DAYS RETURN</span>
+        <span class="featureDesc"
+          >No question return and easy refund in 14 days.</span
+        >
+      </div>
+      <div class="feature">
+        <img class="featureIcon" src="./img/gift.png" alt="" />
+        <span class="featureTitle">GIFT CARDS</span>
+        <span class="featureDesc"
+          >Buy gift cards and use coupon codes easily.</span
+        >
+      </div>
+      <div class="feature">
+        <img class="featureIcon" src="./img/contact.png" alt="" />
+        <span class="featureTitle">CONTACT US!</span>
+        <span class="featureDesc"
+          >Keep in touch via email and support system.</span
+        >
+      </div>
+    </div>
+
+    <div class="product" id="product">
+      <img src="./img/mouse00.png" alt="" class="productImg" />
+      <div class="productDetails">
+        <h1 class="productTitle">G502 X PLUS GAMING MOUSE</h1>
+        <h2 class="productPrice">₹14500</h2>
+        <p class="productDesc">
+          G502 X PLUS is the latest addition to legendary G502 lineage.
+          Reinvented with our first-ever LIGHTFORCE hybrid switches, LIGHTSPEED
+          pro-grade wireless, LIGHTSYNC RGB, HERO 25K sensor, and more.
+        </p>
+        <div class="colors">
+          <div class="color"></div>
+          <div class="color"></div>
+        </div>
+        <div class="option">
+          <div class="size"></div>
+          <div class="size"></div>
+          <div class="size"></div>
+        </div>
+        <button class="productButton">BUY NOW!</button>
+      </div>
+      <div class="payment">
+        <h1 class="payTitle">Personal Information</h1>
+        <label>Name and Surname</label>
+        <input type="text" placeholder="Sarthak Mahajan" class="payInput" />
+        <label>Phone Number</label>
+        <input type="text" placeholder="+91 7878765146" class="payInput" />
+        <label>Address</label>
+        <input type="text" placeholder="Bilaspur" class="payInput" />
+        <h1 class="payTitle">Card Information</h1>
+        <div class="cardIcons">
+          <img src="./img/visa.png" width="40" alt="" class="cardIcon" />
+          <img src="./img/master.png" alt="" width="40" class="cardIcon" />
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number" />
+        <div class="cardInfo">
+          <input type="text" placeholder="mm" class="payInput sm" />
+          <input type="text" placeholder="yyyy" class="payInput sm" />
+          <input type="text" placeholder="cvv" class="payInput sm" />
+        </div>
+        <button class="payButton">Checkout!</button>
+        <span class="close">X</span>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="galleryItem">
+        <h1 class="galleryTitle">Be Yourself!</h1>
+        <img
+          src="https://images.pexels.com/photos/7047538/pexels-photo-7047538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+          class="galleryImg"
+        />
+      </div>
+      <div class="galleryItem">
+        <img
+          src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          alt=""
+          class="galleryImg"
+        />
+        <h1 class="galleryTitle">Get ready for some new games</h1>
+      </div>
+      <div class="galleryItem">
+        <h1 class="galleryTitle">Just Enjoy!</h1>
+        <img
+          src="https://images.pexels.com/photos/4009602/pexels-photo-4009602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+          class="galleryImg"
+        />
+      </div>
+    </div>
+    <div class="newSeason">
+      <div class="nsItem">
+        <img
+          src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+          class="nsImg"
+        />
+      </div>
+      <div class="nsItem">
+        <h3 class="nsTitleSm">NEW ARRIVALS</h3>
+        <h1 class="nsTitle">New Season</h1>
+        <h1 class="nsTitle">New Accessories</h1>
+        <a href="#nav">
+          <button class="nsButton">CHOOSE YOUR OWN ZONE</button>
+        </a>
+      </div>
+      <div class="nsItem">
+        <img
+          src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+          class="nsImg"
+        />
+        <!-- <img src="https://www.pexels.com/photo/shallow-focus-photo-of-white-headphones-7915497/" alt=""> -->
+      </div>
+    </div>
+    <footer>
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">About Us</h1>
+          <ul class="fList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Useful Links</h1>
+          <ul class="fList">
+            <li class="fListItem">Support</li>
+            <li class="fListItem">Refund</li>
+            <li class="fListItem">FAQ</li>
+            <li class="fListItem">Feedback</li>
+            <li class="fListItem">Stories</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Products</h1>
+          <ul class="fList">
+            <a href="#nav"><li class="fListItem">Gaming Mouse</li></a>
+            <a href="#nav"><li class="fListItem">Gaming Keyboard</li></a>
+            <a href="#nav"><li class="fListItem">Gaming Headsets</li></a>
+            <a href="#nav"><li class="fListItem">Gaming Chair</li></a>
+            <a href="#nav"><li class="fListItem">Controllers</li></a>
+            
+            <!-- <li class="fListItem"><a href="#menuItem-k">Gaming Headphones</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="footerRight">
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+          <div class="fMail">
+            <input type="text" id="newsletter-input-email"  placeholder="your@email.com" class="fInput" />
+            <button class="fButton" onclick="sendNewsletter()">Join!</button>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Follow Us</h1>
+          <div class="fIcons">
+            <a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="" class="fIcon" /></a>
+            <a href="https://www.twitter.com/"><img src="./img/twitter.png" alt="" class="fIcon" /></a>
+            <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="" class="fIcon" /></a>
+            <a href="https://www.whatsapp.com/"><img src="./img/whatsapp.png" alt="" class="fIcon" /></a>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <span class="copyright">@GExpress All rights reserved. 2022.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
