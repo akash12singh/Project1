@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMR</title>
+    <!-- css here -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/bmw.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>V.M.R</h1>
+    </header>
+
+    <footer>
+        <h3>BMW</h3>
+        <br>
+
+        <div id="owl-demo">
+            <div class="item"><img src="images/bmwz4.jpg" alt="Owl Image"></div>
+            <div class="item"><img src="images/bmw004.jpg" alt="Owl Image"></div>
+            <div class="item"><img src="images/bmw005.jpg" alt="Owl Image"></div> 
+            <div class="item"><img src="images/bmw006.jpg" alt="Owl Image"></div>
+            <div class="item"><img src="images/bmw008.jpg" alt="Owl Image"></div>
+        </div>
+        <div>
+
+            <h2>cars</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('BMW Z4')"> BMW Z4</button>
+  <button class="btn" onclick="filterSelection('BMW 2')"> BMW SERIES 2</button>
+  <button class="btn" onclick="filterSelection('BMW X3')"> BMW X3</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="/images/bmwz4.jpg" alt="Mountains" style="width:100%">
+      <h5>BMW Z4</h5>
+      <p>Horse Power: 124kW - 280kW
+        Effective Price: 66L - 81L
+        Milage: 13 - 14Km/l
+        Engine: 6 cylinder
+        Space: 2 seater</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="/images/x4.jpg" alt="Lights" style="width:100%">
+      <h5>BMW X3</h5>
+      <p>Horse Power: 140Kw - 185kW
+        Effective Price: 66L - 68L
+        Mileage: 13Km/l - 17Km/l
+        Engine: both 4 cylinder & 6 cylinder option 
+        Space: 5 seater</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="/images/bmw22.jpg" alt="Nature" style="width:100%">
+      <h5>BMW SERIES 2</h5>
+      <p> Horse Power: 302kW
+        Effective Price: 38L - 42L
+        Mileage: 11Km/l
+        Engine: 6 cylinder
+        Space: 5 seater</p>
+    </div>
+  </div>
+
+  
+
+  <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 300px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+    </head>
+    <body>
+    <hr>
+    
+    <hr>
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="/images/01.jpg" style="width:100%">
+      <div class="text">VMR</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="/images/001.jpg" style="width:100%">
+      <div class="text">Browse More Cars</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="/images/oo2.jpg" style="width:100%">
+      <div class="text">Find Your Dream Car</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
+    </body>
+    </html> 
+        </div>
+        <br>
+
+        <div>
+            <h4>
+                Prominent Vehicles
+            </h4>
+        </div>
+
+        <div>
+            <p>
+                The price of starting model of BMW is around 38.85 Lakhs for the basic model of BMW X-1 The price ranges till the BMW M8 coupe which is worth 2.41cr. The categories of models availabe are:- 1. Sedans 2. SUV's 3. Coupe The prominent Models in decent range
+                are BMW X-3(66.45L), BMW 2 Series Gran Coupe(45.39L)
+            </p>
+        </div>
+
+        <div>
+            <h4>
+                BMW X3
+            </h4>
+            <p>
+                The BMW X3 has 1 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 1995 cc while the Petrol engine is 1998 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the X3 has a mileage of 13.17 to 16.55
+                kmpl & Ground clearance of X3 is 211mm. The X3 is a 5 seater 4 cylinder car It also has a standout feature that is a large panoramic sunroof that helps more natural light to flow in making it an efficient, stylish and affordable car for
+                you
+            </p>
+        </div>
+
+
+
+        <div>
+            <img src="bmwx3_.jfif" alt="" width="160">
+            <br>
+            <a href="https://www.bmw.in/en/all-models/x-series/X3/2018/at-a-glance.html?tl=sea-goog-alon-pro-miy-.-text-septembe-20210914-x3salespD2F0D4EE&gclid=Cj0KCQjwwY-LBhD6ARIsACvT72NnxTTNKTfOyajww7w5E7vzO5PAiqFFJrbBZqws52y0v-5eEAAs6jwaAuRTEALw_wcB&gclsrc=aw.ds">For more info</a>
+        </div>
+
+        <div>
+            <h4>
+                BMW Series 2
+            </h4>
+        </div>
+
+        <div>
+            The BMW 2 Series has 1 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 1995 cc while the Petrol engine is 1998 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the 2 Series has a mileage of 14.82
+            to 18.64 kmpl . The 2 Series is a 5 seater 4 cylinder, etc. It also in corporates features such as gesture controls, Reversing assistant and ambient lighting that makes you feel at home in your car
+        </div>
+
+        <div>
+            <img src="bmw3.jfif" alt="" width="160">
+            <br>
+            <a href="https://www.bmw.in/en/all-models/2-series/gran-coupe/2020/bmw-2-series-gran-coupe-highlights.html">For more info</a>
+        </div>
+
+        <div>
+            <h4>
+                BMW Z4
+            </h4>
+        </div>
+
+        <div>
+            <p>
+                The BMW Z4 has 2 Petrol Engine on offer. The Petrol engine is 1998 cc and 2998 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the Z4 has a mileage of 11.29 to 14.37 kmpl . The Z4 is a 2 seater 6 cylinder car.
+                This car is a perfect blend of sport and civil having a convertible rooftop adding a stylist finish to your collection
+            </p>
+        </div>
+
+        <div>
+            <img src="bmwz4.jpg" alt="" width="160">
+            <br>
+            <a href=">For more info</a>
+        </div>
+    </footer>
+
+    <main>
+        <a href="/index.html" target="_main">
+            <img align="left" src="vmr.jfif" alt="vmr" width="80">
+            <a href="https://bmw.com/" target="_main">
+                <img align="right" src="bmwlogo.jfif" alt="vmr" width="80">
+                <br>
+    </main>
+
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--Boostrap-Jquery-->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--Preetyphoto-Jquery-->
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <!--NiceScroll-Jquery-->
+    <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <!--Isotopes-->
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <!--Wow-Jquery-->
+    <script type="text/javascript" src="js/wow.js"></script>
+    <!--Count-Jquey-->
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+    <!--Owl-Crousels-Jqury-->
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <!--Main-Scripts-->
+    <script type="text/javascript" src="js/bmw.js"></script>
+
+</html>
+
+
+
+  
+<!-- END GRID -->
+</div>
